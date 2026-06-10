@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W.E.N.D.A.R.I.A // Mk.I</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dialogues.js" defer></script>
+    <script src="engine.js" defer></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>⚙️ WENDARIA HUD</h2>
+        <div class="hud-metric">
+            <label>CHRONO VECTOR</label>
+            <div class="value" id="live-clock">00:00:00</div>
+        </div>
+        <div class="hud-metric">
+            <label>SYSTEM CORE ARCH</label>
+            <div class="value">W.E.N.D.A.R.I.A</div>
+        </div>
+        <div class="hud-metric">
+            <label>PLATFORM MODE</label>
+            <div class="value" style="color: #00E5FF;">STANDALONE</div>
+        </div>
+    </div>
+
+    <div class="main-canvas">
+        <div class="header-banner">🌐 W.E.N.D.A.R.I.A // Mk.I</div>
+        
+        <div class="terminal-log" id="terminalLog">
+            <div class="log-entry">
+                <div class="wendaria-line">W.E.N.D.A.R.I.A: Core web infrastructure stabilized. Interface processing operational. Standing by...</div>
+            </div>
+        </div>
+
+        <div class="console-dock">
+            <span class="console-prompt">sys_node></span>
+            <input type="text" class="console-input" id="consoleInput" placeholder="Enter command protocol..." autofocus autocomplete="off">
+        </div>
+    </div>
+
+</body>
+</html>

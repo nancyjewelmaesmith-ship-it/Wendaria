@@ -1,0 +1,107 @@
+/* style.css - W.E.N.D.A.R.I.A Stark Blue Theme */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #0A0D14;
+    color: #E0E6ED;
+    font-family: 'Consolas', 'Courier New', monospace;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 320px;
+    background-color: #070A0F;
+    border-right: 2px solid #00E5FF;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h2 {
+    color: #00E5FF;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
+    border-bottom: 1px solid #1A2333;
+    padding-bottom: 10px;
+}
+
+.hud-metric {
+    background: #101524;
+    padding: 12px;
+    border-radius: 4px;
+    border-left: 3px solid #00E5FF;
+}
+
+.hud-metric label {
+    font-size: 0.75rem;
+    color: #8A99AD;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.hud-metric .value {
+    font-size: 1.3rem;
+    color: #00E5FF;
+    font-weight: bold;
+}
+
+.main-canvas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.header-banner {
+    color: #00E5FF;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
+    margin-bottom: 20px;
+}
+
+.terminal-log {
+    flex: 1;
+    background-color: #06080D;
+    border: 1px solid #1A2333;
+    border-radius: 6px;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+.log-entry { margin-bottom: 14px; line-height: 1.5; }
+.user-line { color: #8A99AD; font-weight: bold; }
+.wendaria-line { 
+    color: #E0E6ED; 
+    white-space: pre-wrap;
+    border-left: 3px solid #00E5FF;
+    padding-left: 10px;
+    margin-top: 4px;
+}
+
+.console-dock {
+    display: flex;
+    background-color: #101524;
+    border: 1px solid #1A2333;
+    border-radius: 4px;
+    padding: 5px 15px;
+    align-items: center;
+}
+
+.console-prompt { color: #00E5FF; font-weight: bold; margin-right: 15px; }
+.console-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #E0E6ED;
+    font-family: 'Consolas', monospace;
+    font-size: 1rem;
+    padding: 10px 0;
+}
